@@ -733,8 +733,7 @@ public class ListaExercicios {
         Random rand = new Random();
         int[] qDados = {0,0,0,0,0,0};
         for (int i = 0; i < 100; i++) {
-            int rolagem = rand.nextInt(0, 6);
-            qDados[rolagem]++;
+            qDados[rand.nextInt(0,6)]++;
         }
         System.out.println("Rolagem de dados");
         System.out.println("# | vezes rodadas");
